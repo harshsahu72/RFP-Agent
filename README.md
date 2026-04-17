@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📄 RFP Agent — AI-Powered Proposal Intelligence
 
 > **Win More RFPs in Less Time.**  
@@ -177,3 +178,6 @@ MIT License — free to use, modify, and distribute.
 ---
 
 > Built with ❤️ for the hackathon · © 2025 RFP Agent
+=======
+# RFP-Agent
+>>>>>>> 887b626aec22fe676409e93b14f6a91a077f3077
