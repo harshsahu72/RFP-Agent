@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proposal & RFP Agent – Win More RFPs in Less Time</title>
+  <meta name="description" content="AI-powered RFP response agent that learns from your past proposals, tracks win/loss patterns, and writes tailored responses to help you close more deals."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="progress-bar" id="progress-bar"></div>
+
+<!-- Demo Bar -->
+<div class="demo-bar" id="demo-bar" style="position:relative;">
+  🚀 &nbsp;<strong>New:</strong> AI-powered win rate analysis is now live!&nbsp;
+  <a href="contact.html">Book your free demo →</a>
+  <button class="demo-bar-close" id="demo-bar-close" aria-label="Close">✕</button>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="use-cases.html">Use Cases</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="btn btn-primary btn-sm" style="border-radius:100px;">Book Demo</a>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">📄</div>
+      <div class="logo-text">RFP<span>Agent</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-outline btn-sm">Book Demo</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get Started →</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" role="button" aria-label="Open menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-grid"></div>
+  <div class="particles-container" id="particles"></div>
+
+  <div class="container hero-content">
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-icon">✨</span>
+        AI-Powered Proposal Intelligence
+      </div>
+
+      <h1 class="hero-title">
+        <span id="typing-text" class="gradient-text">Win More RFPs</span><br/>
+        <span style="color:var(--text-primary);">in Less Time</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        The intelligent RFP response agent that learns from your past proposals, 
+        identifies winning patterns, and generates tailored responses — turning days of 
+        work into hours.
+      </p>
+
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          🚀 Get Started Free
+        </a>
+        <a href="contact.html" class="btn btn-outline btn-lg">
+          ▶ Watch Demo
+        </a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="hero-metric">
+          <div class="metric-val">70%</div>
+          <div class="metric-label">Time Saved</div>
+        </div>
+        <div class="hero-metric">
+          <div class="metric-val">+30%</div>
+          <div class="metric-label">Win Rate Increase</div>
+        </div>
+        <div class="hero-metric">
+          <div class="metric-val">10x</div>
+          <div class="metric-label">More Responses</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="hero-visual">
+      <div class="hero-visual-main">
+        <div class="hvt">
+          <div class="hvt-dots">
+            <div class="hvt-dot"></div>
+            <div class="hvt-dot"></div>
+            <div class="hvt-dot"></div>
+          </div>
+          <div class="hvt-title">RFP Agent — Proposal Assistant</div>
+        </div>
+
+        <div class="ai-chat">
+          <div class="chat-msg user">
+            <div class="chat-avatar user-av">👤</div>
+            <div class="chat-bubble">Generate a response to the cybersecurity section of Acme Corp's RFP</div>
+          </div>
+
+          <div class="chat-msg ai">
+            <div class="chat-avatar ai-av">🤖</div>
+            <div class="chat-bubble">
+              ✅ Found 3 highly similar past proposals — 2 were <strong>won</strong>.<br/><br/>
+              Generating tailored response using your firm's proven security framework...
+            </div>
+          </div>
+
+          <div class="chat-msg ai" style="align-items:flex-start;">
+            <div class="chat-avatar ai-av">🤖</div>
+            <div>
+              <div class="chat-bubble" style="margin-bottom:10px;">
+                📋 <strong>Draft Ready:</strong> "Our ISO 27001-certified security infrastructure provides enterprise-grade protection with 99.9% uptime SLA..."
+              </div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                <span class="badge badge-green">✓ High Win Probability</span>
+                <span class="badge badge-primary">Past match: 87%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-msg ai">
+            <div class="chat-avatar ai-av">🤖</div>
+            <div class="typing-indicator">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="hero-float-badge badge-left">
+        <div class="float-badge-icon">🏆</div>
+        <div class="float-badge-val" style="color:#FEBC2E;">+30%</div>
+        <div class="float-badge-label">Win Rate</div>
+      </div>
+      <div class="hero-float-badge badge-top">
+        <div class="float-badge-icon">⚡</div>
+        <div class="float-badge-val" style="background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">70% Less</div>
+        <div class="float-badge-label">Time Spent</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="container">
+    <p class="trust-bar-label">Trusted by leading B2B teams worldwide</p>
+    <div class="trust-logos">
+      <span class="trust-logo">⬡ Accenture</span>
+      <span class="trust-logo">◈ Deloitte</span>
+      <span class="trust-logo">◆ McKinsey</span>
+      <span class="trust-logo">▲ PwC</span>
+      <span class="trust-logo">● KPMG</span>
+      <span class="trust-logo">■ Booz Allen</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats-section section-sm">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item animate-on-scroll">
+        <span class="stat-value" data-count="70" data-suffix="%" id="stat1">0%</span>
+        <div class="stat-label">Average time saved per proposal</div>
+      </div>
+      <div class="stat-item animate-on-scroll delay-1">
+        <span class="stat-value" data-count="30" data-suffix="%" id="stat2">0%</span>
+        <div class="stat-label">Increase in win rate</div>
+      </div>
+      <div class="stat-item animate-on-scroll delay-2">
+        <span class="stat-value" data-count="5000" data-suffix="+" id="stat3">0+</span>
+        <div class="stat-label">Proposals processed monthly</div>
+      </div>
+      <div class="stat-item animate-on-scroll delay-3">
+        <span class="stat-value" data-count="98" data-suffix="%" id="stat4">0%</span>
+        <div class="stat-label">Customer satisfaction score</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES PREVIEW -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="text-center animate-on-scroll">
+      <div class="section-tag"><span class="dot"></span> Core Capabilities</div>
+      <h2 class="section-title">Everything you need to <span>win more deals</span></h2>
+      <p class="section-subtitle">From memory to personalization — our AI handles the heavy lifting so your team can focus on strategy.</p>
+    </div>
+
+    <div class="features-grid" style="margin-top:60px;">
+      <!-- Featured card -->
+      <div class="feature-card featured animate-on-scroll">
+        <div class="feature-card-content">
+          <div class="feature-icon feature-icon-1">🧠</div>
+          <div class="badge badge-primary" style="margin-bottom:12px;">Flagship Feature</div>
+          <h3>Memory of Past Proposals</h3>
+          <p>Our AI stores and indexes every proposal you've ever written. When a new RFP arrives, it instantly surfaces the most relevant past content — complete with win/loss context.</p>
+          <a href="features.html" class="btn btn-primary btn-sm" style="margin-top:20px;">Explore →</a>
+        </div>
+        <div class="feature-card-visual">
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="background:rgba(91,91,214,0.15);border:1px solid rgba(91,91,214,0.2);border-radius:10px;padding:10px 14px;font-size:0.8rem;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+                <span style="color:var(--text-muted);">Acme Corp — Cybersecurity RFP</span>
+                <span class="badge badge-green" style="font-size:0.65rem;">Won ✓</span>
+              </div>
+              <div style="color:var(--text-secondary);font-size:0.78rem;">Match score: <strong style="color:var(--primary-light);">94%</strong></div>
+            </div>
+            <div style="background:rgba(91,91,214,0.1);border:1px solid rgba(91,91,214,0.15);border-radius:10px;padding:10px 14px;font-size:0.8rem;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+                <span style="color:var(--text-muted);">Global Bank — IT Audit RFP</span>
+                <span class="badge badge-green" style="font-size:0.65rem;">Won ✓</span>
+              </div>
+              <div style="color:var(--text-secondary);font-size:0.78rem;">Match score: <strong style="color:var(--primary-light);">81%</strong></div>
+            </div>
+            <div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.15);border-radius:10px;padding:10px 14px;font-size:0.8rem;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+                <span style="color:var(--text-muted);">City Gov — Cloud Migration</span>
+                <span style="background:rgba(239,68,68,0.2);color:#EF4444;font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid rgba(239,68,68,0.3);">Lost ✗</span>
+              </div>
+              <div style="color:var(--text-secondary);font-size:0.78rem;">Analysis: pricing was <strong style="color:#EF4444;">too high</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feature-icon feature-icon-2">📊</div>
+        <h3>Win/Loss Analysis</h3>
+        <p>Automatically identifies what language, sections, and arguments correlate with winning — and avoids what doesn't.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feature-icon feature-icon-3">🎯</div>
+        <h3>Client Personalization</h3>
+        <p>Builds a profile for each client, remembering their preferences, priorities, and communication style for perfect-fit responses.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-3">
+        <div class="feature-icon feature-icon-4">💡</div>
+        <h3>Smart Boilerplate</h3>
+        <p>Automatically suggests proven blocks of content from past winning proposals — always contextually appropriate.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-4">
+        <div class="feature-icon feature-icon-5">⚡</div>
+        <h3>Time Savings</h3>
+        <p>Reduce proposal creation from days to hours. Let your team focus on strategy while AI handles the writing.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="features.html" class="btn btn-outline">View All Features →</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS PREVIEW -->
+<section class="section" style="background:linear-gradient(180deg, transparent, rgba(91,91,214,0.05), transparent);">
+  <div class="container">
+    <div class="text-center animate-on-scroll">
+      <div class="section-tag"><span class="dot"></span> Process</div>
+      <h2 class="section-title">Up and running in <span>4 simple steps</span></h2>
+      <p class="section-subtitle">From onboarding to your first AI-generated proposal in under an hour.</p>
+    </div>
+
+    <div class="how-it-works-flow">
+      <div class="step-item animate-on-scroll">
+        <div class="step-number">1</div>
+        <div class="step-icon">📁</div>
+        <div class="step-title">Upload Past Proposals</div>
+        <div class="step-desc">Import your historical RFP responses in any format. Our AI ingests and indexes everything.</div>
+      </div>
+      <div class="step-item animate-on-scroll delay-1">
+        <div class="step-number">2</div>
+        <div class="step-icon">🧠</div>
+        <div class="step-title">AI Learns Patterns</div>
+        <div class="step-desc">The system analyzes win/loss outcomes, writing styles, and client-specific preferences.</div>
+      </div>
+      <div class="step-item animate-on-scroll delay-2">
+        <div class="step-number">3</div>
+        <div class="step-icon">✍️</div>
+        <div class="step-title">Generate Responses</div>
+        <div class="step-desc">Paste in a new RFP and get a fully tailored, high-quality draft in minutes — not days.</div>
+      </div>
+      <div class="step-item animate-on-scroll delay-3">
+        <div class="step-number">4</div>
+        <div class="step-icon">📈</div>
+        <div class="step-title">Improve Over Time</div>
+        <div class="step-desc">Every win or loss feeds back into the model, continuously improving your response quality.</div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:48px;">
+      <a href="how-it-works.html" class="btn btn-outline">See Detailed Walkthrough →</a>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="section">
+  <div class="container">
+    <div class="text-center animate-on-scroll">
+      <div class="section-tag"><span class="dot"></span> Transformation</div>
+      <h2 class="section-title">Before vs. <span>After RFP Agent</span></h2>
+      <p class="section-subtitle">See the dramatic difference our AI makes in your proposal workflow.</p>
+    </div>
+
+    <div class="before-after-grid animate-on-scroll">
+      <div class="ba-side before">
+        <div class="ba-label before-lbl">✗ Before RFP Agent</div>
+        <div class="ba-list">
+          <div class="ba-item">
+            <span class="ba-icon">😩</span>
+            <span>Manually searching through old proposals in shared drives</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">⏰</span>
+            <span>3–5 days of writing, editing, and reviewing per RFP</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">❓</span>
+            <span>No idea why you won or lost previous bids</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">🔁</span>
+            <span>Rewriting the same sections from scratch every time</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">📉</span>
+            <span>Generic, one-size-fits-all responses for every client</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">🤯</span>
+            <span>Team burnout from overwhelming proposal volume</span>
+          </div>
+        </div>
+      </div>
+      <div class="ba-side after">
+        <div class="ba-label after-lbl">✓ After RFP Agent</div>
+        <div class="ba-list">
+          <div class="ba-item">
+            <span class="ba-icon">🔍</span>
+            <span>Instant AI-powered retrieval of the most relevant past content</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">⚡</span>
+            <span>First draft ready in under 2 hours — reviewed and polished by lunch</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">📊</span>
+            <span>Clear win/loss patterns and actionable improvement insights</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">♻️</span>
+            <span>Smart boilerplate auto-suggested from proven winning sections</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">🎯</span>
+            <span>Client-personalized tone, priorities, and technical depth</span>
+          </div>
+          <div class="ba-item">
+            <span class="ba-icon">🏆</span>
+            <span>Team confidently submits more proposals with higher quality</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(91,91,214,0.05),transparent);">
+  <div class="container">
+    <div class="text-center animate-on-scroll">
+      <div class="section-tag"><span class="dot"></span> Testimonials</div>
+      <h2 class="section-title">Loved by <span>proposal teams</span></h2>
+      <p class="section-subtitle">See what sales leaders and proposal managers are saying about RFP Agent.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"We went from spending a full week on each RFP to submitting polished proposals in a single day. Our win rate jumped from 22% to 41% in just three months."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div>
+            <div class="author-name">Sarah R.</div>
+            <div class="author-role">Head of Proposals, TechVentures Inc.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The win/loss analysis feature alone is worth the subscription. We finally understand why we lose deals and can course-correct. Game changer for our consulting firm."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MK</div>
+          <div>
+            <div class="author-name">Marcus K.</div>
+            <div class="author-role">Managing Partner, Apex Consulting</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"As a government contractor, we respond to dozens of RFPs per month. RFP Agent cut our team's workload in half and improved compliance section quality significantly."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JP</div>
+          <div>
+            <div class="author-name">Jennifer P.</div>
+            <div class="author-role">VP Sales, GovTech Solutions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-banner-bg"></div>
+  <div class="cta-banner-glow"></div>
+  <div class="container cta-banner-content animate-on-scroll">
+    <div class="section-tag" style="margin:0 auto 24px;"><span class="dot"></span> Get Started Today</div>
+    <h2>Ready to start winning more RFPs?</h2>
+    <p>Join hundreds of B2B teams already using RFP Agent to write faster and win more.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary btn-lg">🚀 Start Free Trial</a>
+      <a href="pricing.html" class="btn btn-ghost btn-lg">View Pricing →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">📄</div>
+          <span>RFP<span style="background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Agent</span></span>
+        </div>
+        <p class="footer-desc">AI-powered proposal intelligence that helps B2B teams write better RFP responses and win more deals.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-btn" aria-label="GitHub">⌥</a>
+          <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="use-cases.html">Use Cases</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">GDPR</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 RFP Agent. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Counter trigger for stats section
+  document.addEventListener('DOMContentLoaded', () => {
+    initCounters();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features – Proposal & RFP Agent</title>
+  <meta name="description" content="Explore all features of RFP Agent: AI memory, win/loss analysis, client personalization, smart boilerplate, and more."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+<div class="progress-bar" id="progress-bar"></div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="use-cases.html">Use Cases</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="btn btn-primary btn-sm" style="border-radius:100px;">Book Demo</a>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">📄</div>
+      <div class="logo-text">RFP<span>Agent</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html" class="active">Features</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-outline btn-sm">Book Demo</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get Started →</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="particles-container" id="particles"></div>
+  <div class="container page-hero-content">
+    <div class="section-tag" style="margin:0 auto 20px;"><span class="dot"></span> Full Feature Suite</div>
+    <h1 class="section-title text-center">Powerful features for <span>serious proposal teams</span></h1>
+    <p class="section-subtitle text-center" style="margin:0 auto;">Every tool you need to write better, faster, and smarter RFP responses — all in one intelligent platform.</p>
+  </div>
+</section>
+
+<!-- FEATURE 1: Memory -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="animate-on-scroll">
+      <div>
+        <div class="section-tag"><span class="dot"></span> Feature 01</div>
+        <h2 class="section-title">Proposal <span>Memory Engine</span></h2>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:20px;">
+          Never start from scratch again. RFP Agent stores every proposal you've ever written in a searchable, AI-indexed knowledge base. When a new RFP arrives, it instantly surfaces the most relevant past content — with win/loss annotations.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;font-size:1rem;flex-shrink:0;">✓</span>
+            Semantic search across all historical proposals
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;font-size:1rem;flex-shrink:0;">✓</span>
+            Section-level matching (not just document-level)
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;font-size:1rem;flex-shrink:0;">✓</span>
+            Contextual relevance scoring for each match
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;font-size:1rem;flex-shrink:0;">✓</span>
+            Import from PDF, Word, Google Docs, or plain text
+          </li>
+        </ul>
+      </div>
+      <div class="highlight-box" style="background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius-xl);padding:32px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+          <span style="font-size:1.5rem;">🧠</span>
+          <span style="font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;">Memory Search</span>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid var(--border-light);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:0.85rem;color:var(--text-muted);">
+          🔍 &nbsp;"cybersecurity compliance enterprise"
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="background:rgba(91,91,214,0.1);border:1px solid rgba(91,91,214,0.2);border-radius:10px;padding:14px;font-size:0.8rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-weight:600;">Acme Corp — Q2 2024</span>
+              <span class="badge badge-green" style="font-size:0.65rem;">Won</span>
+            </div>
+            <div style="color:var(--text-muted);">Match: 94% · Section: Security Architecture</div>
+          </div>
+          <div style="background:rgba(91,91,214,0.08);border:1px solid rgba(91,91,214,0.15);border-radius:10px;padding:14px;font-size:0.8rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-weight:600;">Global Bank — Q4 2023</span>
+              <span class="badge badge-green" style="font-size:0.65rem;">Won</span>
+            </div>
+            <div style="color:var(--text-muted);">Match: 81% · Section: Compliance Framework</div>
+          </div>
+          <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.15);border-radius:10px;padding:14px;font-size:0.8rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-weight:600;">City Gov — Q1 2024</span>
+              <span style="background:rgba(239,68,68,0.2);color:#EF4444;font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid rgba(239,68,68,0.3);">Lost</span>
+            </div>
+            <div style="color:var(--text-muted);">Match: 73% · Pricing was 28% above median</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="container"><div class="divider"></div></div>
+
+<!-- FEATURE 2: Win/Loss Analysis -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="animate-on-scroll">
+      <div class="highlight-box" style="background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius-xl);padding:32px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+          <span style="font-size:1.5rem;">📊</span>
+          <span style="font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;">Win/Loss Dashboard</span>
+        </div>
+        <!-- Mini chart bars -->
+        <div style="margin-bottom:20px;">
+          <div style="display:flex;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;"><span>Win Rate by Section</span><span>Last 90 days</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:4px;"><span>Executive Summary</span><span style="color:#10B981;">78%</span></div>
+              <div style="background:rgba(255,255,255,0.05);border-radius:100px;height:6px;"><div style="width:78%;height:100%;background:linear-gradient(90deg,#10B981,#5B5BD6);border-radius:100px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:4px;"><span>Technical Approach</span><span style="color:var(--primary-light);">62%</span></div>
+              <div style="background:rgba(255,255,255,0.05);border-radius:100px;height:6px;"><div style="width:62%;height:100%;background:var(--gradient-primary);border-radius:100px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:4px;"><span>Pricing Section</span><span style="color:#EF4444;">34%</span></div>
+              <div style="background:rgba(255,255,255,0.05);border-radius:100px;height:6px;"><div style="width:34%;height:100%;background:linear-gradient(90deg,#EF4444,#F97316);border-radius:100px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:4px;"><span>Case Studies</span><span style="color:#FEBC2E;">55%</span></div>
+              <div style="background:rgba(255,255,255,0.05);border-radius:100px;height:6px;"><div style="width:55%;height:100%;background:linear-gradient(90deg,#FEBC2E,#F97316);border-radius:100px;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div style="background:rgba(91,91,214,0.1);border:1px solid rgba(91,91,214,0.2);border-radius:10px;padding:12px;font-size:0.8rem;color:var(--text-secondary);">
+          💡 <strong>AI Insight:</strong> Proposals with 3+ client testimonials win 47% more often.
+        </div>
+      </div>
+      <div>
+        <div class="section-tag"><span class="dot"></span> Feature 02</div>
+        <h2 class="section-title">Win/Loss <span>Intelligence</span></h2>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:20px;">
+          Stop guessing why you lose deals. RFP Agent correlates proposal content with outcomes and reveals exactly which sections, arguments, pricing strategies, and writing styles lead to wins — versus losses.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Section-by-section win rate breakdown
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Pricing sensitivity analysis vs. competitors
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Keyword and tone analysis for winning content
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Actionable AI-generated improvement suggestions
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- FEATURE 3: Client Personalization -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="animate-on-scroll">
+      <div>
+        <div class="section-tag"><span class="dot"></span> Feature 03</div>
+        <h2 class="section-title">Client <span>Personalization</span></h2>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:20px;">
+          Every client is different. RFP Agent builds a unique profile for each organization — tracking their priorities, communication preferences, budget sensitivity, technical depth, and past engagement history.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Persistent client memory across all interactions
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Tone and technical depth auto-adjustment
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Priority keyword detection from client documents
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:0.95rem;color:var(--text-secondary);">
+            <span style="color:#10B981;">✓</span> Industry-specific language alignment
+          </li>
+        </ul>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius-xl);padding:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+          <div style="width:44px;height:44px;background:var(--gradient-primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;">🏦</div>
+          <div>
+            <div style="font-weight:700;font-size:0.95rem;">Global National Bank</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);">Client Profile · Updated 2 hours ago</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:0.82rem;">
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-light);">
+            <span style="color:var(--text-muted);">Preferred tone</span>
+            <span style="color:var(--text-primary);font-weight:600;">Formal, data-driven</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-light);">
+            <span style="color:var(--text-muted);">Top priority</span>
+            <span style="color:var(--text-primary);font-weight:600;">Security & Compliance</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-light);">
+            <span style="color:var(--text-muted);">Price sensitivity</span>
+            <span style="color:#10B981;font-weight:600;">Low (quality focus)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-light);">
+            <span style="color:var(--text-muted);">Technical depth</span>
+            <span style="color:var(--text-primary);font-weight:600;">High (engineering team reviews)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;">
+            <span style="color:var(--text-muted);">Past proposals</span>
+            <span style="color:var(--primary-light);font-weight:600;">7 submitted · 5 won (71%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- FEATURE 4, 5, 6 cards -->
+<section class="section">
+  <div class="container">
+    <div class="text-center animate-on-scroll">
+      <div class="section-tag"><span class="dot"></span> More Features</div>
+      <h2 class="section-title">More tools to <span>supercharge your workflow</span></h2>
+    </div>
+    <div class="features-grid" style="margin-top:48px;grid-template-columns:repeat(3,1fr);">
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon feature-icon-4">💡</div>
+        <h3>Smart Boilerplate</h3>
+        <p>Auto-inserted proven content blocks from past winning proposals — always contextually appropriate and editable.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Section-aware suggestions</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> One-click insertion</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Customize before use</li>
+        </ul>
+      </div>
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feature-icon feature-icon-5">⚡</div>
+        <h3>Speed to Submission</h3>
+        <p>Cut proposal creation time by 70%. Go from blank page to polished submission in hours, not days — for every RFP.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Parallel section drafting</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Auto-formatting & structure</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Export to Word/PDF</li>
+        </ul>
+      </div>
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feature-icon feature-icon-6">🤖</div>
+        <h3>AI Writing Assistant</h3>
+        <p>A built-in generative AI that writes, rewrites, and enhances any section on demand — with full context awareness.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> GPT-4 powered generation</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Tone & length control</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Inline suggestion mode</li>
+        </ul>
+      </div>
+      <div class="feature-card animate-on-scroll delay-3">
+        <div class="feature-icon feature-icon-1" style="background:rgba(0,194,203,0.15);">🔗</div>
+        <h3>Team Collaboration</h3>
+        <p>Invite your entire proposal team. Assign sections, leave comments, and track changes — all within one platform.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Real-time co-editing</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Role-based access</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Version history</li>
+        </ul>
+      </div>
+      <div class="feature-card animate-on-scroll delay-4">
+        <div class="feature-icon feature-icon-2" style="background:rgba(246,173,85,0.15);">🔒</div>
+        <h3>Enterprise Security</h3>
+        <p>SOC 2 Type II certified. Your proposals are encrypted at rest and in transit, with zero training on your data.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> End-to-end encryption</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> SSO / SAML support</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> GDPR compliant</li>
+        </ul>
+      </div>
+      <div class="feature-card animate-on-scroll delay-5">
+        <div class="feature-icon feature-icon-3" style="background:rgba(16,185,129,0.15);">📊</div>
+        <h3>Analytics Dashboard</h3>
+        <p>Track proposal performance metrics, team productivity, response rates, and win rates across all clients and verticals.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Custom reports</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> CRM integrations</li>
+          <li style="font-size:0.82rem;color:var(--text-muted);display:flex;gap:8px;"><span style="color:#10B981;">✓</span> Weekly digest emails</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-banner-bg"></div>
+  <div class="cta-banner-glow"></div>
+  <div class="container cta-banner-content animate-on-scroll">
+    <h2>See all features in action</h2>
+    <p>Get a personalized demo with one of our product specialists.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary btn-lg">Book a Live Demo</a>
+      <a href="pricing.html" class="btn btn-ghost btn-lg">View Pricing →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">📄</div>
+          <span>RFP<span style="background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Agent</span></span>
+        </div>
+        <p class="footer-desc">AI-powered proposal intelligence that helps B2B teams write better RFP responses and win more deals.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">⌥</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="use-cases.html">Use Cases</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 RFP Agent. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
