@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+<<
+HEAD
 # 📄 RFP Agent — AI-Powered Proposal Intelligence
 
 > **Win More RFPs in Less Time.**  
